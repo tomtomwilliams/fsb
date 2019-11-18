@@ -87,8 +87,8 @@ $color-link: {{ settings.color_body_links }};
 $opacity-link-hover: 0.7;
 
 // Text colors
-$color-body-text: {{ settings.color_body_text }};
-$color-headings-text: {{ settings.color_body_headings }};
+$color-body-text: #fff;
+$color-headings-text: #fff;
 $color-footer-text: {{ settings.color_footer_text }};
 
 // Border colors
@@ -112,7 +112,7 @@ $width-logo: initial;
 $control-color: $color-headings-text;
 
 /*================ Navigation Header ================*/
-$color-navigation-bg: {{ settings.color_nav_bg }};
+$color-navigation-bg: #000;
 $color-navigation-text: {{ settings.color_nav_text }};
 
 /*================ #Action Bar ================*/
@@ -148,13 +148,13 @@ $gutter-heading: 30px;
 {{ base_family_bold_italic | font_face }}
 
 // Header text
-$font-stack-header: {{ header_family.family }}, {{ header_family.fallback_families }};
+$font-stack-header: "Cybertron", {{ header_family.fallback_families }};
 $font-weight-header: {{ header_family.weight }};
 $font-style-header: {{ header_family.style }};
 $font-size-header: {{ settings.type_header_base_size }};
 
 // Body text
-$font-stack-body: {{ base_family.family }}, {{ base_family.fallback_families }};
+$font-stack-body: 'Roboto', 'Open Sans';
 $font-style-body: {{ base_family.style }};
 $font-weight-body: {{ base_family.weight | default: 400 }};
 $font-weight-body-bold: {{ base_family_bold.weight | default: 700 }};
@@ -192,7 +192,7 @@ $radius: 2px;
 $svg-action-bar: '{{ "action-bar.svg.liquid" | asset_url }}';
 
 /*================ #Site Header ================*/
-$height-site-header: 65px;
+$height-site-header: 50px;
 $transition-site-header: top 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 
 /*================ #Forms ================*/
@@ -1036,11 +1036,11 @@ ol {
   @include prefix(appearance, none, webkit moz spec);
 
   // Set primary button colors - can override later
-  background-color: $color-btn-primary;
+  background-color: #8B0000;
   color: $color-btn-primary-text;
 
   &:hover {
-    background-color: $color-btn-primary-hover;
+    background-color: #8B0000;
     color: $color-btn-primary-text;
   }
 
@@ -1696,6 +1696,7 @@ label[for] {
 /*================ Grid | No gutters ================*/
 .grid--no-gutters {
   margin-left: 0;
+  background-color: #323232;
 
   > .grid__item {
     padding-left: 0;
@@ -3659,7 +3660,7 @@ $slick-opacity-not-active: 0.25;
   color: $color-drawers-text;
   background-color: $color-drawers;
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  height: $height-site-header;  
+  height: $height-site-header;
   padding: 0 ($gutter-site / 2);
 }
 
@@ -4078,6 +4079,7 @@ $slick-opacity-not-active: 0.25;
   margin-left: -($gutter-site / 2);
   margin-top: $gutter-site;
   margin-bottom: $gutter-site;
+  display: none;
 }
 
 .social-icons--drawer {
@@ -4708,6 +4710,7 @@ $slick-opacity-not-active: 0.25;
   margin-bottom: 40px;
   font-size: em($font-size-base - 1);
   text-align: left;
+  display: none;
 }
 
 .featured-product__policies {
@@ -5933,4 +5936,3 @@ $z-index-giftcard-code: 5;
     display: none;
   }
 }
-
