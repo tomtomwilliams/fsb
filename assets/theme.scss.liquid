@@ -73,8 +73,8 @@ $grid-breakpoint-has-push: ($medium-up, $large-up);
 /*================ #Color Variables ================*/
 
 // Backgrounds
-$color-body: {{ settings.color_body_bg }};
-$color-footer: {{ settings.color_footer_bg }};
+$color-body: #000;
+$color-footer: #000;
 
 // Button colors
 $color-btn-primary: {{ settings.color_button_bg }};
@@ -160,7 +160,7 @@ $font-weight-body: {{ base_family.weight | default: 400 }};
 $font-weight-body-bold: {{ base_family_bold.weight | default: 700 }};
 
 $font-size-base: {{ settings.type_base_size }}; // Henceforth known as 1em
-$font-size-button: {{ settings.type_button_base_size }};
+$font-size-button: 20px;
 $font-size-button-mobile: $font-size-button - 1px;
 
 @font-face {
@@ -192,7 +192,7 @@ $radius: 2px;
 $svg-action-bar: '{{ "action-bar.svg.liquid" | asset_url }}';
 
 /*================ #Site Header ================*/
-$height-site-header: 50px;
+$height-site-header: 40px;
 $transition-site-header: top 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 
 /*================ #Forms ================*/
@@ -1038,9 +1038,10 @@ ol {
   // Set primary button colors - can override later
   background-color: #8B0000;
   color: $color-btn-primary-text;
+  transition: 0.3s;
 
   &:hover {
-    background-color: #8B0000;
+    background-color: #B03838;
     color: $color-btn-primary-text;
   }
 
@@ -1995,7 +1996,8 @@ h1 {
 }
 
 h2 {
-  font-size: em(floor($font-size-header * 0.85)); //20px
+  font-size: 3em; //20px
+  text-align: center;
 }
 
 h3 {
@@ -4793,7 +4795,8 @@ $slick-opacity-not-active: 0.25;
   padding: 2px 0;
 }
 .product__price {
-  font-size: em($font-size-base + 2px);
+  font-size: 2.125em;
+  font-family: "Cybertron";
   clear: both;
 }
 

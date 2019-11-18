@@ -107,12 +107,13 @@
     {% endif %}
 
     <div class="product__details grid__item">
+      <h2 itemprop="name">{{ product.title }}</h2>
       <div class="grid grid--no-gutters product__details-content">
         <div class="grid__item {% if section.settings.product_form_width == 'large' %}medium-up--three-twelfths medium-up--push-one-fifth{% else %}large-up--two-twelfths large-up--push-two-twelfths medium-up--three-twelfths medium-up--push-one-twelfth{% endif %}">
           {% if section.settings.show_vendor %}
             <p class="product-item__vendor small--text-center">{{ product.vendor }}</p>
           {% endif %}
-          <h2 itemprop="name">{{ product.title }}</h2>
+          <!-- <h2 itemprop="name">{{ product.title }}</h2> -->
           <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
           {%- capture 'form_id' -%}AddToCartForm-{{ section.id }}{%- endcapture -%}
           {%- capture 'form_class' -%}
