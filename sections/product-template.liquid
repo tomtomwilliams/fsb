@@ -49,7 +49,7 @@
             {% if forloop.index != 2 %} hide{% endif %}
           {% else %}
             {% unless featured_image == image %} hide{% endunless %}
-          {% endif %}" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;">
+          {% endif %}" style="text-align: center; background-color: #141414;">
             <img class="product__photo--variant lazyload"
               src="{{ image | img_url: '300x' }}"
               data-src="{{ img_url }}"
