@@ -50,7 +50,7 @@
           {% else %}
             {% unless featured_image == image %} hide{% endunless %}
           {% endif %}" style="text-align: center; background-color: #141414;">
-            <img class="product__photo--variant lazyload"
+            <img data-aos="zoom-in" class="product__photo--variant lazyload"
               src="{{ image | img_url: '300x' }}"
               data-src="{{ img_url }}"
               data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"

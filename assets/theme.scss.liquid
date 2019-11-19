@@ -159,8 +159,8 @@ $font-style-body: {{ base_family.style }};
 $font-weight-body: {{ base_family.weight | default: 400 }};
 $font-weight-body-bold: {{ base_family_bold.weight | default: 700 }};
 
-$font-size-base: {{ settings.type_base_size }}; // Henceforth known as 1em
-$font-size-button: 20px;
+$font-size-base: 15px; // Henceforth known as 1em
+$font-size-button: 16px;
 $font-size-button-mobile: $font-size-button - 1px;
 
 @font-face {
@@ -1996,7 +1996,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3em; //20px
+  font-size: 2em; //20px
   text-align: center;
 }
 
@@ -2110,7 +2110,7 @@ th {
 /*================ Theme links and buttons ================*/
 .btn {
   position: relative;
-  padding: 10px 26px;
+  padding: 10px 10px;
   border-radius: $radius;
   @include header-font-stack();
   font-size: $font-size-button; // 14px
@@ -4796,7 +4796,7 @@ $slick-opacity-not-active: 0.25;
   padding: 2px 0;
 }
 .product__price {
-  font-size: 2.125em;
+  font-size: 2em;
   font-family: "Cybertron";
   clear: both;
 }
