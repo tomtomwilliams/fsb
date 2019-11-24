@@ -822,7 +822,7 @@ $grid-breakpoints: (
 ==============================================================================*/
 body,
 html {
-  background-color: $color-body;
+  background-color: #141414;
 }
 
 .page-width {
@@ -3831,9 +3831,10 @@ $slick-opacity-not-active: 0.25;
 
 .product-item__meta__inner {
   text-align: center;
+  font-size: 20px;
 
   @include media-query($medium-down) {
-    text-align: left;
+    text-align: center;
     padding-top: $gutter-site;
     float: left;
     width: 100%;
@@ -3898,10 +3899,11 @@ $slick-opacity-not-active: 0.25;
 
 .product-item__vendor,
 .product-item__price-wrapper {
-  font-size: $font-size-base;
+  font-size: 20px;
+  font-family: Cybertron;
 
   @include media-query($medium-down) {
-    font-size: $font-size-base - 2px;
+    font-size: 20px;
   }
 }
 
