@@ -2310,7 +2310,7 @@ html {
 .site-footer {
   background-color: $color-footer;
   color: $color-footer-text;
-  padding: ($gutter-site * 2) $gutter-site;
+  padding: 40px 20px 0px;
 
   a {
     color: $color-footer-text;
@@ -2336,6 +2336,11 @@ html {
       display: block;
     }
   }
+}
+
+.custom-footer-links a {
+  color: #fff;
+  font-size: 16px;
 }
 
 .payment-icons__icon {
@@ -3822,7 +3827,7 @@ $slick-opacity-not-active: 0.25;
 .product-item__title {
   @include header-font-stack();
   color: $color-headings-text;
-  font-size: em(floor($font-size-header * 0.83)); // 20px
+  font-size: 14px;; // 20px
 
   @include media-query($medium-down) {
     font-size: em(floor($font-size-header * 0.6)); // 15px
@@ -3848,7 +3853,7 @@ $slick-opacity-not-active: 0.25;
   }
 }
 
-@include media-query($large-up) {
+@include media-query(4000px) {
   .product-item__meta {
     display: block;
     height: 100%;
@@ -5226,7 +5231,7 @@ $slick-opacity-not-active: 0.25;
 
 .password-footer {
   background-color: $color-footer;
-  display: table-cell;
+  display: none; //was table-cell
   vertical-align: bottom;
   padding: $gutter-site;
   color: $color-footer-text;

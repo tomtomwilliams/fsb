@@ -4,11 +4,21 @@
   {% endcomment %}
   {% if linklists[section.settings.footer_link_list].links.size > 0 %}
     <ul class="list--inline site-footer__linklist">
-      {% for link in linklists[section.settings.footer_link_list].links %}
-        <li class="h4"><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% for link in linklists.main-menu.links %}
+        <li class="h4 custom-footer-links"><a href="{{ link.url }}">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
   {% endif %}
+
+  {% if linklists[section.settings.footer_link_list].links.size > 0 %}
+    <ul class="list--inline site-footer__linklist">
+      {% for link in linklists.drawer-menu.links %}
+        <li class="h4 custom-footer-links"><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
 
   <div class="grid text-center large-up--grid--table">
     <div class="grid__item large-up--one-quarter text-center">
@@ -113,6 +123,13 @@
       {%- endif -%}
     </div>
   </div>
+  {% if linklists[section.settings.footer_link_list].links.size > 0 %}
+    <ul class="list--inline site-footer__linklist">
+      {% for link in linklists[section.settings.footer_link_list].links %}
+        <li class="h4" style="font-family:Roboto;"><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </footer>
 
 
