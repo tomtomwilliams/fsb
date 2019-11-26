@@ -107,7 +107,7 @@
     {% endif %}
 
     <div class="product__details grid__item">
-      <h2 itemprop="name">{{ product.title }}</h2>
+      <h2 data-aos="fade-up" itemprop="name">{{ product.title }}</h2>
       <div class="grid grid--no-gutters product__details-content">
         <div class="grid__item {% if section.settings.product_form_width == 'large' %}medium-up--three-twelfths medium-up--push-one-fifth{% else %}large-up--two-twelfths large-up--push-two-twelfths medium-up--three-twelfths medium-up--push-one-twelfth{% endif %}">
           {% if section.settings.show_vendor %}
@@ -167,7 +167,7 @@
             {%- endif -%}
 
             {% if product.available %}
-              <button id="AddToCart-{{ section.id }}" type="submit" name="add" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}">
+              <button data-aos="fade-right" id="AddToCart-{{ section.id }}" type="submit" name="add" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}">
                 <span class="btn__text">{{ 'products.product.add_to_cart' | t }}</span>
               </button>
             {% else %}
