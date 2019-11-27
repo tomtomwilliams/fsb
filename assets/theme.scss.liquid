@@ -904,12 +904,12 @@ pre {
 .icon-arrow-right:before { content: "\e609"; }
 .icon-arrow:before { content: "\e901"; }
 .icon-cart:before { content: "\e600"; }
-.icon-facebook:before { content: "\66"; }
+.icon-facebook:before { content: url('{{ "facebook_five-star.png" | file_url }}'); }
 .icon-fancy:before { content: "\46"; }
 .icon-google_plus:before { content: "\e904"; }
 .icon-grid-view:before { content: "\e603"; }
 .icon-hamburger:before { content: "\e601"; }
-.icon-instagram:before { content: "\e905"; }
+.icon-instagram:before { content: url('{{ "instagram_five-star.png" | file_url }}'); }
 .icon-list-view:before { content: "\e604"; }
 .icon-minus:before { content: "\e602"; }
 .icon-pause:before { content: "\e902"; }
@@ -922,7 +922,7 @@ pre {
 .icon-search:before { content: "\73"; }
 .icon-snapchat:before { content: "\e908"; }
 .icon-tumblr:before { content: "\74"; }
-.icon-twitter:before { content: "\54"; }
+.icon-twitter:before { content: url('{{ "twitter_five-star.png" | file_url }}'); }
 .icon-vimeo:before { content: "\76"; }
 .icon-x:before { content: "\e606"; }
 .icon-youtube:before { content: "\79"; }
@@ -4111,9 +4111,12 @@ $slick-opacity-not-active: 0.25;
 
 .social-icons--drawer {
   margin-top: $gutter-site * 1.5;
+  margin-left: 50px !important;
+  position: absolute;
+  bottom: 0px;
 
   @include media-query($medium-down) {
-    margin-left: $gutter-site / 2;
+    // margin-left: 50px;
   }
 }
 
