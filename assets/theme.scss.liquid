@@ -402,6 +402,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 20px;
 }
 
 td,
@@ -2466,7 +2467,7 @@ textarea,
 select {
   @include placeholder-text($color-body-text, 0.6);
 
-  background-color: $color-form;
+  background-color: #323232;
   border: 0 none;
   max-width: 100%;
 
@@ -4189,7 +4190,7 @@ $slick-opacity-not-active: 0.25;
 }
 
 .drawer--right {
-  width: $drawer-cart-width;
+  width: 375px;
   right: -$drawer-cart-width;
 
   .js-drawer-open-right & {
@@ -4371,7 +4372,8 @@ $slick-opacity-not-active: 0.25;
   right: 0;
   margin: 0;
   padding: 0 ($gutter-site / 2);
-  bottom: $drawer-cart-footer-height; // overwritten with JS
+  bottom: 290px !important; // overwritten with JS
+  border-bottom: 1px solid #fff;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -4383,6 +4385,8 @@ $slick-opacity-not-active: 0.25;
 
 .ajaxcart__footer {
   padding-top: $gutter-site;
+  width: 100% !important;
+  height: 302px !important;
 }
 
 .ajaxcart__footer--fixed {
@@ -4472,7 +4476,7 @@ $slick-opacity-not-active: 0.25;
 }
 
 .ajaxcart__policies {
-  margin-bottom: 45px;
+  margin-bottom: 3px;
   color: $color-body-text;
 }
 
