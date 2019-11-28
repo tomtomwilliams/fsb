@@ -4945,6 +4945,10 @@ $slick-opacity-not-active: 0.25;
 // }
 
 /*================ Modules | Theme collection grid item ================*/
+.collection-grid {
+  background-color: #141414;
+}
+
 .collection-grid__item {
   overflow: hidden;
 
@@ -4971,11 +4975,17 @@ $slick-opacity-not-active: 0.25;
 
 
 .collection-grid__title {
+  position: relative;
+  top: 10px;
   @include header-font-stack();
   font-size: em(20);
   color: $color-headings-text;
 
-  @include media-query ($medium-down) {
+  @include media-query ($medium-up) {
+    top: 30px;
+  }
+
+  @include media-query (4000px) {
     background-color: $color-action-bar-bg;
     color: $color-action-bar-text;
     padding: 15px $gutter-site;
@@ -4995,7 +5005,7 @@ $slick-opacity-not-active: 0.25;
   overflow: hidden;
   height: 100%;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -5008,7 +5018,7 @@ $slick-opacity-not-active: 0.25;
   display: table;
 }
 
-@include media-query ($large-up) {
+@include media-query (4000px) {
   .collection-grid__title {
     opacity: 0;
     display: table-cell;
@@ -5997,4 +6007,9 @@ $z-index-giftcard-code: 5;
        url('{{ "Cybertron_Moviecaps.ttf" | asset_url }}') format("truetype");
   font-weight: $font-weight-body;
   font-style: normal;
+}
+
+.image-with-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
