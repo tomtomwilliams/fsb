@@ -2011,6 +2011,7 @@ h2 {
 
 h3 {
   font-size: em(floor($font-size-header * 0.7)); //16px
+  font-style: italic;
 }
 
 h4 {
@@ -2350,6 +2351,7 @@ html {
 .custom-footer-links a {
   color: #fff;
   font-size: 16px;
+  font-style: italic;
 }
 
 .payment-icons__icon {
@@ -3836,7 +3838,8 @@ $slick-opacity-not-active: 0.25;
 .product-item__title {
   @include header-font-stack();
   color: $color-headings-text;
-  font-size: 14px;; // 20px
+  font-size: 20px;; // 20px 28/11/19 edit, was 14px
+  font-style: italic;
 
   @include media-query($medium-down) {
     font-size: em(floor($font-size-header * 0.6)); // 15px
@@ -3915,6 +3918,7 @@ $slick-opacity-not-active: 0.25;
 .product-item__price-wrapper {
   font-size: 20px;
   font-family: Cybertron;
+  display: none; // 28/11/19 edit
 
   @include media-query($medium-down) {
     font-size: 20px;
@@ -4562,6 +4566,9 @@ $slick-opacity-not-active: 0.25;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-family: Cybertron;
+    font-style: italic;
+    text-transform: uppercase;
   }
 }
 
@@ -6010,6 +6017,42 @@ $z-index-giftcard-code: 5;
 }
 
 .image-with-text {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
+}
+
+.quantity-breaks-now-wrapper {
+width: 400px;
+}
+
+.qb-discount-table-row {
+padding: 10px;
+}
+
+.quantity-breaks-now-discount-table td {
+padding: 10px;
+}
+
+th {
+padding: 10px;
+}
+
+.discount-code-wrapper input[type=text] {
+background-color: #000 !important;
+}
+
+.apply-discount-code {
+background-color: #8D0000 !important;
+}
+
+.quantity-breaks-now-discount-title {
+text-align:left;
+}
+
+.quantity-breaks-now-discount-description {
+text-align: left;
+}
+
+.discount-code-wrapper input[type=text] {
+  color: #fff;
 }
