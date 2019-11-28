@@ -1740,6 +1740,7 @@ label[for] {
     width: 100%;
     margin-left: 0;
 
+
     > .grid__item {
       float: none;
       display: table-cell;
@@ -1965,6 +1966,7 @@ select {
   font-style: $font-style-body;
   color: $color-body-text;
   line-height: 1.6;
+  text-align: center;
 }
 
 // Prevent zoom on touch devices in active inputs
@@ -2000,7 +2002,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px; //20px
+  font-size: 30px; //20px - was 40px 28/11/19
   text-align: center;
   font-style: italic;
   letter-spacing: 0px;
@@ -5531,6 +5533,7 @@ $slick-opacity-not-active: 0.25;
 /* Feature row */
 
 .feature-row {
+  background-color: #323232;
 
   .feature-row__image-wrapper {
     position: relative;
@@ -5538,6 +5541,7 @@ $slick-opacity-not-active: 0.25;
 
   .feature-row__item img {
     width: 100%;
+    max-width: 100% !important;
     display: block;
     position: absolute;
     top: 0;
@@ -5549,7 +5553,7 @@ $slick-opacity-not-active: 0.25;
     max-width: 780px;
     padding: 0px 35px;
     @include media-query($medium-down) {
-      padding: 0px 20px;
+      padding: 20px 20px 30px;
     }
   }
 
@@ -5564,6 +5568,7 @@ $slick-opacity-not-active: 0.25;
 
   .feature-row__text--left {
     margin-top: 20px;
+    background-color: #323232;
   }
 }
 
