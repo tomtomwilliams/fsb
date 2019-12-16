@@ -2319,8 +2319,9 @@ html {
   }
   background-color: $color-footer;
   color: $color-footer-text;
-  padding: 40px 20px 0px;
+  padding: 40px 20px 15px;
   margin-top: 35px;
+  height: 100%;
 
   a {
     color: $color-footer-text;
@@ -6012,6 +6013,15 @@ $z-index-giftcard-code: 5;
   src: url('{{ "Cybertron_Moviecaps.eot" | asset_url }}');
   src: url('{{ "Cybertron_Moviecaps.woff" | asset_url }}') format("woff"),
        url('{{ "Cybertron_Moviecaps.ttf" | asset_url }}') format("truetype");
+  font-weight: $font-weight-body;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('{{ "Roboto-Regular-webfont.eot" | asset_url }}');
+  src: url('{{ "Roboto-Regular-webfont.woff" | asset_url }}') format("woff"),
+       url('{{ "Roboto-Regular-webfont.ttf" | asset_url }}') format("truetype");
   font-weight: $font-weight-body;
   font-style: normal;
 }
