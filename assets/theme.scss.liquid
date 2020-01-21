@@ -3819,7 +3819,7 @@ $slick-opacity-not-active: 0.25;
     margin-bottom: 0;
 
     .product-item__link:hover & {
-      opacity: 0.1;
+      opacity: 1;
     }
   }
 }
@@ -6069,4 +6069,22 @@ text-align: left;
 
 .apply-discount-code {
   -webkit-appearance:none;
+}
+
+@media only screen and (min-width: 769px) {
+  .product-item {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-item {
+    width: 100%;
+  }
 }
