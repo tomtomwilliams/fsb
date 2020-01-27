@@ -1,0 +1,208 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="centered-text">
+  <h1>Recent Catches</h1>
+  <p>All the latest and greatest catches featured here.</p>
+  <!-- <p>Have you had success using Five Star Baits? We want to see your best and most recent catches, which have a chance to be featured on our website and social channels!</p> -->
+</div>
+
+<!-- Trigger the Modal -->
+<div class="gallery-container">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_001.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_002.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_003.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_004.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_005.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_006.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_007.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_008.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_009.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_010.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_011.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_012.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_013.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_014.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_015.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_016.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_017.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_018.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_019.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_020.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_021.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_022.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_023.jpg?v=1579820198" alt="" width="300">
+  <img class="fishImg" src="https://cdn.shopify.com/s/files/1/0252/5272/4787/files/five-star-baits_carp-fishing-bait_image_024.jpg?v=1579820198" alt="" width="300">
+</div>
+
+<!-- The Modal -->
+<div id="galleryModal" class="gallery-modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('galleryModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
+</div>
+
+<style>
+
+.centered-text {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 25%;
+}
+
+@media only screen and (max-width: 600px){
+  .centered-text {
+    padding: 0 5%;
+  }
+}
+
+.gallery-container {
+  text-align: center;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.fishImg {
+  border-radius: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px 20px;
+}
+
+.fishImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.gallery-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(1)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(1)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 701px){
+  .close {
+    top: 90px;
+    right: 125px;
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+    margin-top: 125px;
+  }
+  .close {
+    top: unset;
+    right: unset;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+</style>
+
+
+
+<script>
+
+// Get the modal
+var modalFish = document.getElementById('galleryModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imgFish = $('.fishImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.fishImg').click(function(){
+  modalFish.style.display = "block";
+  var newSrc = this.src;
+  modalImg.attr('src', newSrc);
+  captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalFish.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalFish) {
+    modalFish.style.display = "none";
+  }
+}
+
+</script>
