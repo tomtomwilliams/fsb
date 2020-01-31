@@ -2379,7 +2379,7 @@ html {
   }
 
   .social-icons {
-    margin-right: $gutter-site * 1.5;
+    // margin-right: $gutter-site * 1.5;
   }
 }
 
@@ -3136,6 +3136,7 @@ textarea {
   &.is-active {
     opacity: 1;
     height: auto;
+    margin-bottom: -15px;
   }
 }
 
@@ -3423,7 +3424,7 @@ $slick-opacity-not-active: 0.25;
   margin: 0;
 
   img {
-    max-height: $height-site-header;
+    max-height: 60px;
     display: block;
     margin: 0 auto;
   }
@@ -3471,7 +3472,7 @@ $slick-opacity-not-active: 0.25;
     &:before {
       content: '';
       position: absolute;
-      top: 18px;
+      top: 33px;
       right: 4px;
       width: 10px;
       height: 10px;
@@ -3479,7 +3480,7 @@ $slick-opacity-not-active: 0.25;
       border-radius: 50%;
 
       @include media-query($small) {
-        top: 14px;
+        top: 27px;
         right: 0;
       }
     }
@@ -4118,8 +4119,8 @@ $slick-opacity-not-active: 0.25;
 
 .social-icons--drawer {
   margin-top: $gutter-site * 1.5;
-  margin-left: 50px !important;
-  position: absolute;
+  // margin-left: 50px !important;
+  // position: absolute;
   bottom: 0px;
 
   @include media-query($medium-down) {

@@ -2,7 +2,7 @@
   {% if section.settings.home_page_only == false or request.page_type == 'index' %}
     <style>
       .announcement-bar {
-        background-color: #323232;
+        background-color: limegreen;
       }
 
       .announcement-bar--link:hover {
@@ -28,7 +28,7 @@
       <a href="{{ section.settings.link }}" class="announcement-bar announcement-bar--link">
     {% endif %}
 
-      <p class="announcement-bar__message" style="text-transform:uppercase;">Order by 10am Thursday 19th December for delivery before Christmas</p>
+      <p class="announcement-bar__message" style="text-transform:uppercase;">Free delivery on <u>all</u> orders throughout February! No code required</p>
 
     {% if section.settings.link == blank %}
       </div>
